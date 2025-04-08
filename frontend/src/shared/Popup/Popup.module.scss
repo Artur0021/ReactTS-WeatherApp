@@ -1,0 +1,66 @@
+@import '../../styles/variables.scss';
+
+.popup {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40px;
+	max-width: 750px;
+	width: 100%;
+	background: $light-background;
+	box-shadow: $box-shadow;
+	border-radius: 20px;
+}
+
+.blur {
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.25);
+}
+
+.close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+	svg {
+		transition: 0.5s ease;
+	}
+	svg:hover {
+		transform: rotate(360deg);
+		scale: 1.2;
+	}
+}
+
+.day {
+	.temperature {
+		font-weight: 500;
+		font-size: 60px;
+		color: $primary-color;
+		margin-bottom: 12px;
+	}
+	.img {
+		svg {
+			width: 53px;
+			height: 53px;
+		}
+	}
+	.day_name {
+		font-size: 25px;
+		line-height: 30px;
+		color: #000;
+		margin-bottom: 12px;
+	}
+	.this_time,
+	.this_city {
+		font-size: 15px;
+		color: $base-color;
+	}
+}
