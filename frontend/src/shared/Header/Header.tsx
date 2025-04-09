@@ -75,6 +75,7 @@ export default function Header({
 						{ value: 'London', label: 'London' },
 						{ value: 'Tokyo', label: 'Tokyo' },
 						{ value: 'Prague', label: 'Prague' },
+						{ value: 'Nice', label: 'Nice France' },
 					]}
 				/>
 			</div>
